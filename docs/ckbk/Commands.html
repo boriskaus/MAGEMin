@@ -19,7 +19,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Usage" href="gui.html" />
+    <link rel="next" title="As a nested structure" href="out_struct.html" />
     <link rel="prev" title="Command line minimization" href="../ckbk.html" /> 
 </head>
 
@@ -94,6 +94,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#multiple-points-in-parallel">Multiple points in parallel</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../ckbk.html#data-output">Data output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="out_struct.html">As a nested structure</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../ckbk.html#pseudosection-generator">Pseudosection generator</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="gui.html">Usage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gui.html#klb-1-pseudosection-tutorial">KLB-1 Pseudosection tutorial</a><ul>
@@ -110,6 +114,10 @@
 </li>
 </ul>
 </li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Firewall warning (Apple M1)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Developers section:</span></p>
 <ul>
@@ -217,7 +225,7 @@
 <td><p>Pressure in kilobar</p></td>
 </tr>
 <tr class="row-odd"><td><p>--Temp=y</p></td>
-<td><p>Temperature in celsus</p></td>
+<td><p>Temperature in Celsius</p></td>
 </tr>
 <tr class="row-even"><td><p>--Bulk=[y]</p></td>
 <td><p>Bulk rock composition in molar amount</p></td>
@@ -227,7 +235,7 @@
 </tr>
 </tbody>
 </table>
-<p>where <em>x</em> is an integer, <em>y</em> a float/double and <em>[]</em> an array of size <em>number of oxydes</em>.</p>
+<p>where <em>x</em> is an integer, <em>y</em> a float/double and <em>[]</em> a comma-separated list of size <em>number of oxides</em>. The list of oxides must be given in the following order: SiO2,Al2O3,CaO,MgO,FeO,K2O,Na2O,TiO2,O,Cr2O3,H2O</p>
 </section>
 <section id="single-point-calculation">
 <h1>Single point calculation<a class="headerlink" href="#single-point-calculation" title="Permalink to this headline"></a></h1>
@@ -236,6 +244,9 @@
 </pre></div>
 </div>
 <p>Here, the verbose is active and the bulk rock composition of <em>test 0</em> is selected. The output of the verbose is saved as a log file <em>log.txt</em>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="multiple-points-calculation">
 <h1>Multiple points calculation<a class="headerlink" href="#multiple-points-calculation" title="Permalink to this headline"></a></h1>
@@ -279,6 +290,9 @@
 <span class="o">(</span>...<span class="o">)</span>
 </pre></div>
 </div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="multiple-points-in-parallel">
 <h1>Multiple points in parallel<a class="headerlink" href="#multiple-points-in-parallel" title="Permalink to this headline"></a></h1>
@@ -295,7 +309,7 @@ mpiexec -n <span class="m">8</span> ./MAGEMin --Verb<span class="o">=</span><spa
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../ckbk.html" class="btn btn-neutral float-left" title="Command line minimization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="gui.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="out_struct.html" class="btn btn-neutral float-right" title="As a nested structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
